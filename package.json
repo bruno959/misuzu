@@ -1,5 +1,6 @@
 {
   "name": "misuzu",
+  "site": "株式会社ミスズ", 
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

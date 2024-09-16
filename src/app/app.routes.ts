@@ -7,12 +7,10 @@ import { HistoryComponent } from './history/history.component';
 import { LocationComponent } from './location/location.component';
 import { RecruitmentComponent } from './recruitment/recruitment.component';
 import { TopComponent } from './top/top.component';
-import { AppComponent } from './app.component';
 
 
 export const routes: Routes = [{
     path: '',
-    component: AppComponent,
     children: [
         {
             path: '',

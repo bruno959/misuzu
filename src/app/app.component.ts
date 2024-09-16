@@ -3,7 +3,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { filter, map } from 'rxjs/operators';
 import { site } from '../../package.json';
-import { RouterModule } from '@angular/router'; // 追加
+import { RouterModule } from '@angular/router';
 
 
 @Component({

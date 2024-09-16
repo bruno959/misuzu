@@ -1,1 +1,84 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 垂直中央揃え */
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+header img {
+  margin-right: 12px; /* 画像とメニュー間のスペース */
+}
+
+header > div {
+  display: flex;
+  align-items: center; /* 垂直中央揃え */
+}
+
+header .menu {
+  position: relative;
+  margin-right: 12px; /* メニューと次の項目間のスペース */
+}
+
+header .menu p {
+  margin: 0; /* メニュー項目のマージンをリセット */
+  cursor: pointer; /* ホバー時にポインタカーソルに変更 */
+}
+
+header .menu p:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+}
+
+ul {
+  display: none; /* デフォルトでは非表示 */
+  position: absolute;
+  top: 100%; /* 親要素の下に配置 */
+  left: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
+header .menu:hover ul {
+  display: block; /* ホバーしたときに表示 */
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header p, header .menu p {
+  margin: 0 12px; /* 各メニュー項目の間隔 */
+}
+
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

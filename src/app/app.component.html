@@ -1,1 +1,36 @@
-<router-outlet></router-outlet>
+<div>
+  <header>
+    <a routerLink="/">
+      <img src="logo.png" alt="株式会社ミスズロゴ">
+    </a>
+
+    <div>
+      <div class="menu">
+        <p>会社情報</p>
+        <ul>
+          <li><a routerLink="/about">ご挨拶</a></li>
+          <li><a routerLink="/company">会社概要</a></li>
+          <li><a routerLink="/business">事業内容</a></li>
+          <li><a routerLink="/location">所在地</a></li>
+          <li><a routerLink="/history">沿革</a></li>
+        </ul>
+      </div>
+
+      <p>
+        <a routerLink="/recruitment">採用情報</a>
+      </p>
+
+      <p>
+        <a routerLink="/contact">お問い合せ</a>
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    © 2024 MISUZU All rights reserved
+  </footer>
+</div>

@@ -11,6 +11,9 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center; /* 垂直中央揃え */
@@ -77,8 +80,5 @@ header p, header .menu p {
 footer {
   background-color: #f1f1f1;
   padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
 }
